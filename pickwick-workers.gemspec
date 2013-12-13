@@ -19,6 +19,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "sidekiq", "~> 2.17"
+  spec.add_dependency "rubyzip"
+  spec.add_dependency "faraday"
+  spec.add_dependency "nokogiri"
+  spec.add_dependency "unicode_utils"
+  spec.add_dependency "multi_json"
+  spec.add_dependency "oj"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
@@ -26,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "shoulda-context"
   spec.add_development_dependency "turn"
   spec.add_development_dependency "mocha"
+  spec.add_development_dependency "webmock"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "simplecov"
 end
