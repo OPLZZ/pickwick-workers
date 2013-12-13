@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="volnamista.xsl" ?>
+<!-- Integrovaný portál MPSV, http://portal.mpsv.cz                        -->
+<!-- OKsystem s.r.o., Na Pankráci 125, 140 21 Praha 4                      -->
+<!-- +420 244 021 111, webadmin.portal@oksystem.cz, http://www.oksystem.cz -->
+<VOLNAMISTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://portal.mpsv.cz/xml/exportvm" xsi:schemaLocation="http://portal.mpsv.cz/xml/exportvm http://portal.mpsv.cz/xml/exportvm/volnamista-2-4-2.xsd" aktualizace="2013-12-12T05:02:16" verze="2.3.1" detailvm="http://portal.mpsv.cz/vm/">
+  <VOLNEMISTO uid="6330840704" celkemVm="1" zmena="2013-12-11T10:35:06" jakKontaktovat="1" autor="1" vyraditDne="2014-01-15">
+    <PROFESE kod="251" nazev="Analytici a vývojáři softwaru a počítačových aplikací" doplnek="PROGRAMÁTOR/KA, ANALYTIK/ČKA"/>
+    <FIRMA nazev="VÍTKOVICE IT SOLUTIONS a.s." ic="28606582"/>
+    <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
+    <MIN_VZDELANI kod="K" nazev="ÚSV"/>
+    <UVAZEK kod="1" nazev="Plný"/>
+    <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
+    <KONOS titul="Bc." jmeno="Marie" prijmeni="Vašíčková" telefon="+420 725 492 313" email="marie.vasickova@vitkovice.com">Bc. Marie Vašíčková, vedoucí personalistiky</KONOS>
+    <PRACOVISTE okresKod="3807" okres="Ostrava-město" obec="Ostrava" cobce="Moravská Ostrava" ulice="Cihelní" cp="1575" co="14" psc="702 00" posta="Ostrava 2" nazev="VÍTKOVICE IT SOLUTIONS, a. s.">VÍTKOVICE IT SOLUTIONS, a. s., Cihelní 1575/14, 70200 Ostrava 2</PRACOVISTE>
+    <MZDA min="20000"/>
+    <PRAC_POMER od="2014-01-01"/>
+    <VHODNE_PRO absolventySs="A" absolventyVs="N" ozp="A" bezbar="A" cizince="N"/>
+    <POZNAMKA>ÚKOLY:
+- analytické práce při návrhu a implementaci IS 
+- analyzuje procesy a vytváří analýzy úloh a funkční specifikace
+- vytváří zadávací dokumentaci pro vývoj SW
+- dodržuje postupy dané metodikou pro vývoj SW
+Požadavky:
+- přehled o agilních metodikách vývoje SW
+- znalost SQL DB
+- základní znalost kancelářského SW (MS Office, OpenOffice)
+- analytické myšlení
+- schopnost práce v týmu 
+- samostatnost, komunikativnost, proaktivní přístup
+- angličtina na komunikativní úrovni
+- vzdělání vysokoškolské popř. středoškolské
+</POZNAMKA>
+    <URAD_PRACE kod="142000" nazev="ÚP ČR - kontaktní pracoviště Ostrava"/>
+    <ZELENE_KARTY pocetVmProZk="0" typZk="B" klicovyPersonal="N" celkemVmProZk="0" vmRezervProZk="0" vmRezervProPodanZk="0" vmRezervProVyhovZk="0" vmRezervProVydanZk="0"/>
+    <MODRE_KARTY pocetVmProMk="0" celkemVmProMk="0" vmRezervProMk="0" vmRezervProPodanMk="0" vmRezervProVyhovMk="0" vmRezervProVydanMk="0"/>
+    <OBOR kod="4" nazev="Informační technologie"/>
+  </VOLNEMISTO>
+  <VOLNEMISTO uid="6338830788" celkemVm="1" zmena="2013-12-11T16:33:28" jakKontaktovat="1" autor="1">
+    <PROFESE kod="5312" nazev="Asistenti pedagogů" doplnek="asistent/ka pedagoga - II stupeň"/>
+    <FIRMA nazev="2. Základní škola Holešov" ic="63458799"/>
+    <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
+    <MIN_VZDELANI kod="M" nazev="ÚSO s maturitou (bez vyučení)"/>
+    <UVAZEK kod="2" nazev="Zkrácený"/>
+    <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
+    <KONOS titul="Mgr." jmeno="Helena" prijmeni="Moravčíková" telefon="+420 573 396 019" email="info@zshol.cz">Mgr. Helena Moravčíková, ředitelka</KONOS>
+    <PRACOVISTE okresKod="3708" okres="Kroměříž" obec="Holešov" cobce="Holešov" ulice="Smetanovy sady" cp="625" co="4" psc="769 01" posta="Holešov" nazev="2. Základní škola Holešov">Smetanovy sady 625/4, 76901 Holešov</PRACOVISTE>
+    <MZDA min="10000"/>
+    <PRAC_POMER od="2014-01-13" do="2014-06-30"/>
+    <VHODNE_PRO absolventySs="A" absolventyVs="N" ozp="N" bezbar="N" cizince="N"/>
+    <POZNAMKA>pracoviště Holešov
+- SŠ/VOŠ/VŠ vzdělání pedagogického směru, 0,9 úvazku, doba určitá do 30.6.2014 bez možnosti prodloužení
+- své písemné nabídky se strukturovaným životopisem posílejte do 20.12.2013 na e-mail: info@zshol.cz</POZNAMKA>
+    <URAD_PRACE kod="129000" nazev="ÚP ČR - kontaktní pracoviště Kroměříž"/>
+    <ZELENE_KARTY pocetVmProZk="0" typZk="B" klicovyPersonal="N" celkemVmProZk="0" vmRezervProZk="0" vmRezervProPodanZk="0" vmRezervProVyhovZk="0" vmRezervProVydanZk="0"/>
+    <MODRE_KARTY pocetVmProMk="0" celkemVmProMk="0" vmRezervProMk="0" vmRezervProPodanMk="0" vmRezervProVyhovMk="0" vmRezervProVydanMk="0"/>
+    <OBOR kod="12" nazev="Výchova a vzdělávání"/>
+  </VOLNEMISTO>
+  <VOLNEMISTO uid="6321330727" celkemVm="1" zmena="2013-12-11T09:33:59" jakKontaktovat="1" autor="1" vyraditDne="2014-02-05">
+    <PROFESE kod="5312" nazev="Asistenti pedagogů" doplnek="ASISTENT/-KA PEDAGOGA - Žďár nad Sázavou"/>
+    <FIRMA nazev="Základní škola Žďár nad Sázavou, Komenského 6" ic="48895229"/>
+    <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
+    <MIN_VZDELANI kod="M" nazev="ÚSO s maturitou (bez vyučení)"/>
+    <UVAZEK kod="2" nazev="Zkrácený"/>
+    <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
+    <KONOS titul="Mgr." jmeno="Jana" prijmeni="Svobodová" telefon="+420 566 591 423,736 472 472" email="j.svobodova@3zszdar.cz">Mgr. Jana Svobodová, ředitelka školy</KONOS>
+    <PRACOVISTE okresKod="3714" okres="Žďár nad Sázavou" obec="Žďár nad Sázavou" cobce="Žďár nad Sázavou 3" ulice="Komenského" cp="825" co="6" psc="591 01" posta="Žďár nad Sázavou 1" nazev="Základní škola Žďár nad Sázavou, Komenského 6">Komenského 825/6, 59101 Žďár nad Sázavou 1</PRACOVISTE>
+    <MZDA min="7000"/>
+    <PRAC_POMER od="2014-01-01" do="2014-06-30"/>
+    <VHODNE_PRO absolventySs="N" absolventyVs="N" ozp="A" bezbar="N" cizince="N"/>
+    <POZNAMKA>Jedná se o asistenci při výuce a o přestávkách a o přímou individuální práci se zdravotně postiženým žákem dle pokynů pedagoga.
+Požadujeme:
+-vyšší odborné vzdělání s osvědčením o absolvování studia pro asistenty pedagoga
+-1 rok praxe v oboru
+-vítaná zkušenost s prací s dětmi s PAF
+-příjemné vystupování,empatie
+Nabízíme: závodní stravování
+V případě zájmu zasílejte strukturovaný životopis na email: j.svobodova@3zszdar.cz
+Spojení na kontaktní osobu: Mgr. Jana Svobodová - tel:566 591 423, 736 472 472</POZNAMKA>
+    <URAD_PRACE kod="176000" nazev="ÚP ČR - kontaktní pracoviště Žďár nad Sázavou"/>
+    <ZELENE_KARTY pocetVmProZk="0" typZk="B" klicovyPersonal="N" celkemVmProZk="0" vmRezervProZk="0" vmRezervProPodanZk="0" vmRezervProVyhovZk="0" vmRezervProVydanZk="0"/>
+    <MODRE_KARTY pocetVmProMk="0" celkemVmProMk="0" vmRezervProMk="0" vmRezervProPodanMk="0" vmRezervProVyhovMk="0" vmRezervProVydanMk="0"/>
+    <OBOR kod="12" nazev="Výchova a vzdělávání"/>
+  </VOLNEMISTO>
+  <VOLNEMISTO uid="5754550706" celkemVm="3" zmena="2013-12-11T16:33:28" jakKontaktovat="3" autor="1">
+    <PROFESE kod="71140" nazev="Betonáři, železobetonáři a příbuzní pracovníci" doplnek="BETONÁŘ"/>
+    <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
+    <MIN_VZDELANI kod="H" nazev="Střední odborné (vyučen)"/>
+    <UVAZEK kod="1" nazev="Plný"/>
+    <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
+    <PRACOVISTE okresKod="3808" okres="Přerov" obec="Tovačov"/>
+    <MZDA min="92"/>
+    <PRAC_POMER od="2013-12-02" do="2014-03-31"/>
+    <VHODNE_PRO absolventySs="N" absolventyVs="N" ozp="N" bezbar="N" cizince="N"/>
+    <POZNAMKA>BETONÁŘ
+pracoviště TOVAČOV
+Pracovní poměr na dobu určitou - do 31.03.2014.
+Požadováno: vzdělání - vyučen, praxe v oboru min. půl roku nutná, platný vazačský průkaz, spolehlivost, zodpovědnost.
+Kontakt možný pouze e-mailem: personalista@bauwerk-prace.cz , nebo telefonicky - 736 626 086 - paní Markéta Neuwirtová (po-pá 13-16 hod.) .</POZNAMKA>
+    <URAD_PRACE kod="154003" nazev="ÚP ČR - kontaktní pracoviště Kojetín"/>
+    <ZELENE_KARTY pocetVmProZk="0" typZk="B" klicovyPersonal="N" celkemVmProZk="0" vmRezervProZk="0" vmRezervProPodanZk="0" vmRezervProVyhovZk="0" vmRezervProVydanZk="0"/>
+    <MODRE_KARTY pocetVmProMk="0" celkemVmProMk="0" vmRezervProMk="0" vmRezervProPodanMk="0" vmRezervProVyhovMk="0" vmRezervProVydanMk="0"/>
+    <OBOR kod="10" nazev="Stavebnictví"/>
+  </VOLNEMISTO>
+</VOLNAMISTA>
