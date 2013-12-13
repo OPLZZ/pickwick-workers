@@ -27,7 +27,7 @@ module Pickwick
     end
 
     def __store_url
-      url + "/store"
+      url + "/vacancies"
     end
 
     def __store_payload(documents)
