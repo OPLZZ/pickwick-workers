@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "sidekiq", "~> 2.17"
+  spec.add_dependency "sidetiq"
   spec.add_dependency "rubyzip"
   spec.add_dependency "faraday"
   spec.add_dependency "nokogiri"
