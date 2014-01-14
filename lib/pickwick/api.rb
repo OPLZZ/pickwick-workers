@@ -1,5 +1,8 @@
 module Pickwick
   module API
+
+    class Error < Exception; end
+
     class Response
       def initialize(response)
         @response = response

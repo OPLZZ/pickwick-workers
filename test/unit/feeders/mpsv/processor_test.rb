@@ -51,13 +51,26 @@ module Pickwick
               Pickwick::API.expects(:store).with do |documents|
                 assert_equal 4,  documents.size
                 assert_equal 'programátor/ka, analytik/čka', documents.first[:title]
-              end
+              end.returns(mock(status: 200))
 
               @processor.expects(:download_archive)
               @processor.expects(:extract_data)
               @processor.instance_variable_set('@data', fixture_file('mpsv.xml'))
 
               @processor.perform
+            end
+
+            should "raise error if response from API is not 20x" do
+              Pickwick::API.expects(:store).with do |documents|
+                assert_equal 4,  documents.size
+                assert_equal 'programátor/ka, analytik/čka', documents.first[:title]
+              end.returns(stub(status: 404))
+
+              @processor.expects(:download_archive)
+              @processor.expects(:extract_data)
+              @processor.instance_variable_set('@data', fixture_file('mpsv.xml'))
+
+              assert_raise(Pickwick::API::Error) { @processor.perform }
             end
 
           end

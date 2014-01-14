@@ -24,6 +24,7 @@ module Pickwick
           end
 
           def setup(options={})
+            options.symbolize_keys!
             @options               = options
             @options[:type]      ||= :incremental
             @options[:date]      ||= Time.now.strftime("%Y%m%d")
@@ -51,7 +52,8 @@ module Pickwick
 
           def process_data
             @parser.fetch do |documents|
-              Pickwick::API.store(documents)
+              response = Pickwick::API.store(documents)
+              raise Pickwick::API::Error, "Status code: #{response.status}" if response.status > 201
             end
           end
 
