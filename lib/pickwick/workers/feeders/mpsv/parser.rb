@@ -49,10 +49,9 @@ module Pickwick
               country = "Czech Republic"
               zip     = address.attributes["psc"].text rescue nil
 
-              alternative_address = [street, city, zip, country].compact
-
               { city:        city,
                 street:      street,
+                zip:         zip,
                 country:     country }
             end
           end
