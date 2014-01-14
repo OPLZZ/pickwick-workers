@@ -1,3 +1,5 @@
+# TODO: Write ruby API client
+#
 module Pickwick
   module API
 
@@ -26,11 +28,19 @@ module Pickwick
     end
 
     def store(documents)
-      Response.new(Faraday.post(__store_url, token: token, payload: __store_payload(documents)))
+      Response.new(Faraday.post(__store_url, token: token, payload: __store_payload([documents].flatten)))
+    end
+
+    def get(*ids)
+      Response.new(Faraday.post(__bulk_url, token: token, ids: Array(ids).flatten))
     end
 
     def __store_url
       url + "/vacancies"
+    end
+
+    def __bulk_url
+      url + "/vacancies/bulk"
     end
 
     def __store_payload(documents)

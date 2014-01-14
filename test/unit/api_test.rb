@@ -30,5 +30,23 @@ module Pickwick
 
     end
 
+    context "When getting vacancy" do
+
+      should "get url for getting vacancy using bulk" do
+        assert_equal "http://localhost:9292/vacancies/bulk", Pickwick::API.__bulk_url
+      end
+
+      should "get vacancy according request ids" do
+        VCR.use_cassette('bulk') do
+          response = Pickwick::API.get("d75b0fd410980f87e812af6b4dfcffc72eaa52f2", "1078b7c9db8d05ec6b45e1f27149cd77ea77baf1", "123")
+
+          assert_equal "d75b0fd410980f87e812af6b4dfcffc72eaa52f2", response.body[:vacancies].first[:id]
+          assert_equal "1078b7c9db8d05ec6b45e1f27149cd77ea77baf1", response.body[:vacancies].last[:id]
+          assert_equal 2, response.body[:vacancies].size
+        end
+      end
+
+    end
+
   end
 end
