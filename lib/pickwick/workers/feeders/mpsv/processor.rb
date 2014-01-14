@@ -8,6 +8,10 @@ module Pickwick
           class DownloadFailed   < Exception; end
           class DataFileNotFound < Exception; end
 
+          sidekiq_options queue:     :feeders,
+                          retry:     3,
+                          backtrace: true
+
           def perform(options={})
             setup(options)
             download_archive
