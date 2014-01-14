@@ -1,0 +1,14 @@
+#   sidekiq -C config/sidekiq_queues.yml
+---
+:verbose: true
+:require: ./lib/pickwick-workers.rb
+:pidfile: ./tmp/sidekiq.pid
+:concurrency: 25
+:timeout: 30
+:queues:
+  - default
+  - feeders
+  - enrichment
+  - enrichment_geo
+:limits:
+  enrichment_geo: 1
