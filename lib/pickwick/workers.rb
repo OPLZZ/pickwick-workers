@@ -1,4 +1,5 @@
 require 'sidekiq'
+require 'sidekiq-failures'
 require 'sidekiq-cron'
 require 'faraday'
 require 'zip'

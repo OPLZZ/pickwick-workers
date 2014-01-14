@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sinatra"
   spec.add_dependency "sidekiq"
   spec.add_dependency "sidekiq-cron"
+  spec.add_dependency "sidekiq-failures"
   spec.add_dependency "rubyzip"
   spec.add_dependency "faraday"
   spec.add_dependency "nokogiri"
