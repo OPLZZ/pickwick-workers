@@ -3,6 +3,7 @@ PATH
   specs:
     pickwick-workers (0.0.1)
       faraday
+      geocoder
       multi_json
       nokogiri
       oj

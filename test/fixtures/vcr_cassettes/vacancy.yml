@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:9292/vacancies/bulk
+    body:
+      encoding: US-ASCII
+      string: token=de59c6ce8359c815f11146e473183ad8e7affe42&ids%5B%5D=d75b0fd410980f87e812af6b4dfcffc72eaa52f2
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Length:
+      - '1979'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.0.0/2013-06-27)
+      Date:
+      - Fri, 10 Jan 2014 02:19:14 GMT
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ2YWNhbmNpZXMiOlt7ImlkIjoiZDc1YjBmZDQxMDk4MGY4N2U4MTJhZjZi
+        NGRmY2ZmYzcyZWFhNTJmMiIsInRpdGxlIjoicmVnaW9uw6FsbsOtIG1hbmHF
+        vmVyL2thIiwiZGVzY3JpcHRpb24iOiJSRUdJT07DgUxOw40gTUFOQcW9RVIv
+        S0FcbkF6LXpBIGhvbGRpbmcgamUgcmVrbGFtbsOtLCBzdmF0ZWJuw60gYSB6
+        w6HFvml0a292w6EgYWdlbnR1cmEsIGt0ZXLDoSBrcm9txJsgcG/FmcOhZMOh
+        bsOtIHNwb3J0b3Zuw61jaCwgc3BvbGXEjWVuc2vDvWNoIGEgZmlyZW1uw61j
+        aCBha2PDrSBwcm92b3p1amUgaW50ZXJuZXRvdsOpIHBvcnTDoWx5IG5hIHBv
+        ZHBvcnUgc3bDvWNoIHBhcnRuZXLFrywgamFrbyBqZSBuYXDFmS4gd3d3LmNl
+        c2tlcHJvZHVrdHkuY3ouXG5IbGVkw6FtZSBkbyBrYcW+ZMOpaG8gcmVnaW9u
+        dSAob2tyZXN1KSBqZWRub2hvIGtvb3JkaW7DoXRvcmEva3UsIGt0ZXLDvSBi
+        eSBvcmdhbml6b3ZhbCBuYcWhZSBha2NlLiBWIGthxb5kw6ltIHbEm3TFocOt
+        bSBtxJtzdMSbIMSMUiBieWNob20gcsOhZGkgenJlYWxpem92YWxpIGplZG5v
+        dSBtxJtzw63EjW7EmyBib3dsaW5nb3bDvSB0dXJuYWogYSBkw6FsZSBqZSBt
+        b8W+bm8gcMWZw61tbyB2ZSBzcG9sdXByw6FjaSBzIHJlZ2lvbsOhbG7DrW0g
+        a29vcmRpbsOhdG9yZW0gcmVhbGl6b3ZhdCBha2NlIGRsZSBqZWhvIHrDoWpt
+        xa8gYSBrb27DrcSNa8WvLiBaa3XFoWVub3N0aSBtw6FtZSBzIGTEm3Rza8O9
+        bWkgZG55LCBzdmF0ZWJuw61taSB2ZWxldHJoeSwgYWtjZW1pIHBybyB6ZHJh
+        dm90bsSbIHBvc3Rpxb5lbsOpLCBkxJt0c2vDqSBkb21vdnkgYXBvZC5cblBv
+        xb5hZG92YW7DoSBwcmF4ZTogcHJheGUgdiBvYmNob2Ruw60gxI1pbm5vc3Rp
+        IHbDvWhvZG91XG5OYWLDrXplbsOpIHbDvWhvZHk6IHNwZWNpw6FsbsOtIGJv
+        bnVzb3bDqSBvZG3Em255XG5Ow6FwbMWIIHByw6FjZTpcbi0gb3JnYW5pem92
+        w6Fuw60gYm93bGluZ292w71jaCB0dXJuYWrFr1xuLSByZWFsaXpvdsOhbsOt
+        IHDFmcOtcGFkbsO9Y2ggdmxhc3Ruw61jaCBha2PDrVxuTmFiw616w61tZTpc
+        bi0ga3JlYXRpdm7DrSBwcsOhY2lcbi0gZmxleGliaWxuw60gcHJhY292bsOt
+        IGRvYnVcbi0gdmVsbWkgbmFkc3RhbmRhcnRuw60gZmluYW7EjW7DrSBvaG9k
+        bm9jZW7DrVxuTcOtc3RvIHbDvWtvbnUgcHLDoWNlOiBva29sw60gVmHFoWVo
+        byBieWRsacWhdMSbLlxuTsOhc3R1cCBtb8W+bsO9IGlobmVkLlxuViBwxZnD
+        rXBhZMSbIHrDoWptdSBuw6FzIGtvbnRha3R1anRlIG5hIHRlbC46IDc3NiA2
+        NjggNDQ1IG5lYm8gbmEgZS1tYWlsOiBqYXZ1cmVrQGNlc2tlcHJvZHVrdHku
+        Y3ogIiwiaW5kdXN0cnkiOm51bGwsInJlc3BvbnNpYmlsaXRpZXMiOm51bGws
+        Im51bWJlcl9vZl9wb3NpdGlvbnMiOm51bGwsImVtcGxveW1lbnRfdHlwZSI6
+        ImZ1bGwtdGltZSIsInJlbW90ZSI6ZmFsc2UsImxvY2F0aW9uIjp7InN0cmVl
+        dCI6IkxpZGlja8OhIHTFmS4gMTEwNC8xNzciLCJjaXR5IjoixIxlc2vDqSBC
+        dWTEm2pvdmljZSIsInJlZ2lvbiI6bnVsbCwiY291bnRyeSI6IkN6ZWNoIFJl
+        cHVibGljIiwiY29vcmRpbmF0ZXMiOnsibGF0Ijo0OC45NTI0MDk5LCJsb24i
+        OjE0LjQ2NzAxMzZ9fSwiZXhwZXJpZW5jZSI6bnVsbCwiZW1wbG95ZXIiOnsi
+        bmFtZSI6bnVsbCwiY29tcGFueSI6IkF6LXpBIGhvbGRpbmcgcy5yLm8uIn0s
+        InB1Ymxpc2hlciI6bnVsbCwiY29udGFjdCI6eyJlbWFpbCI6ImphdnVyZWtA
+        Y2Vza2Vwcm9kdWt0eS5jeiIsIm5hbWUiOiJNYXJ0aW4gSmF2xa9yZWssIG1h
+        bmFnZXIgb2JjaG9kbsOtaG8gdMO9bXUiLCJwaG9uZSI6Iis0MjAgNzc2IDY2
+        OCA0NDUifSwiY29tcGVuc2F0aW9uIjpudWxsLCJzdGFydF9kYXRlIjoiMjAx
+        My0wNy0xNFQyMjowMDowMFoiLCJleHBpcmF0aW9uX2RhdGUiOiIyMDE0LTAx
+        LTEzVDEwOjQyOjQyWiIsImNyZWF0ZWRfYXQiOiIyMDEzLTEyLTE0VDEwOjQy
+        OjQyWiIsInVwZGF0ZWRfYXQiOiIyMDE0LTAxLTA5VDA5OjM1OjAzWiJ9XX0=
+    http_version: 
+  recorded_at: Fri, 10 Jan 2014 02:19:14 GMT
+recorded_with: VCR 2.8.0

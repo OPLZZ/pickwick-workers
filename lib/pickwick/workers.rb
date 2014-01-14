@@ -9,11 +9,23 @@ require 'nokogiri'
 require 'unicode_utils'
 require 'multi_json'
 require 'oj'
+require 'geocoder'
 
 require 'pickwick/api'
 require 'pickwick/workers/feeders/mpsv/parser'
 require 'pickwick/workers/feeders/mpsv/processor'
+
+require 'pickwick/workers/enrichment/geo'
 require 'pickwick/workers/version'
+
+Geocoder.configure(
+  lookup:       :nominatim,
+  always_raise: :all,
+  units:        :km,
+  timeout:      30,
+  cache:        Redis.connect(url: (ENV['REDIS_URL'] || 'redis://127.0.0.1:6379'), db: 7)
+)
+
 Sidekiq.configure_server do |config|
   config.server_middleware do |chain|
     chain.add Sidekiq::Throttler, storage: :redis

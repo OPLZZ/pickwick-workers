@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "unicode_utils"
   spec.add_dependency "multi_json"
   spec.add_dependency "oj"
+  spec.add_dependency "geocoder"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
