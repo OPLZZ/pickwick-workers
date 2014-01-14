@@ -1,24 +1,27 @@
 # Pickwick::Workers
 
-TODO: Write a gem description
+This repository represents workers for damepraci.eu.
+
+Workers are currently divided into two main groups
+
+* Feeders
+* Enrichment
+
+### Feeders
+
+Feeders are responsible for data downloading and parsing (currently implemented downloading from MPSV).
+
+### Enrichment
+
+Enrichment workers are responsible for enriching data comming from feeders. For example geocoding, named-entity extraction etc...
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'pickwick-workers'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install pickwick-workers
+__TODO__
 
 ## Usage
 
-TODO: Write usage instructions here
+__TODO__
 
 ## Contributing
 
