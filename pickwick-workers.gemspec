@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "sidekiq", "~> 2.17"
-  spec.add_dependency "sidetiq"
+  spec.add_dependency "sidekiq"
+  spec.add_dependency "sidekiq-cron"
   spec.add_dependency "rubyzip"
   spec.add_dependency "faraday"
   spec.add_dependency "nokogiri"

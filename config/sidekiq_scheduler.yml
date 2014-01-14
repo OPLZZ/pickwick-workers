@@ -1,0 +1,4 @@
+mpsv_incremental:
+  cron:  "* 18 * * *"
+  class: "Pickwick::Workers::Feeders::MPSV::Processor"
+  queue: "default"

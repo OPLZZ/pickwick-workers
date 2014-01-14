@@ -4,9 +4,6 @@ module Pickwick
       module MPSV
         class Processor
           include Sidekiq::Worker
-          include Sidetiq::Schedulable
-
-          recurrence { daily.hour_of_day(18) }
 
           class DownloadFailed   < Exception; end
           class DataFileNotFound < Exception; end
