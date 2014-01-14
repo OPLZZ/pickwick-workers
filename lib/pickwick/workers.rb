@@ -15,7 +15,9 @@ require 'pickwick/api'
 require 'pickwick/workers/feeders/mpsv/parser'
 require 'pickwick/workers/feeders/mpsv/processor'
 
+require 'pickwick/workers/enrichment/all'
 require 'pickwick/workers/enrichment/geo'
+
 require 'pickwick/workers/version'
 
 Geocoder.configure(
