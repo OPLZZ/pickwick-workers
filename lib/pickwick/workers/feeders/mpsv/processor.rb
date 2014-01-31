@@ -12,6 +12,12 @@ module Pickwick
                           retry:     3,
                           backtrace: true
 
+          # Retry in 1, 2, 3 hours
+          #
+          sidekiq_retry_in do |count|
+            3600 * (count + 1)
+          end
+
           def perform(options={})
             setup(options)
             download_archive
