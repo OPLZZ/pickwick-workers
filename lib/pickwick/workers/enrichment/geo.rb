@@ -9,6 +9,12 @@ module Pickwick
                         backtrace: true,
                         throttle:  { threshold: 60, period: 1.minute }
 
+        # Retry in 10, 20, 30 minutes
+        #
+        sidekiq_retry_in do |count|
+          600 * (count + 1)
+        end
+
         def perform(options={})
           setup(options)
           get_vacancy
