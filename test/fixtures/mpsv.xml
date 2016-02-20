@@ -9,15 +9,14 @@
     <FIRMA nazev="VÍTKOVICE IT SOLUTIONS a.s." ic="28606582"/>
     <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
     <MIN_VZDELANI kod="K" nazev="ÚSV"/>
-    <UVAZEK kod="1" nazev="Plný"/>
-    <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
+    <PRACPRAVNI_VZTAH ppvztahPpPlny="A" ppvztahPpZkrac="N" ppvztahSp="N" ppvztahDpp="N" ppvztahDpc="N"/>
     <KONOS titul="Bc." jmeno="Marie" prijmeni="Vašíčková" telefon="+420 725 492 313" email="marie.vasickova@vitkovice.com">Bc. Marie Vašíčková, vedoucí personalistiky</KONOS>
     <PRACOVISTE okresKod="3807" okres="Ostrava-město" obec="Ostrava" cobce="Moravská Ostrava" ulice="Cihelní" cp="1575" co="14" psc="702 00" posta="Ostrava 2" nazev="VÍTKOVICE IT SOLUTIONS, a. s.">VÍTKOVICE IT SOLUTIONS, a. s., Cihelní 1575/14, 70200 Ostrava 2</PRACOVISTE>
     <MZDA min="20000"/>
     <PRAC_POMER od="2014-01-01"/>
     <VHODNE_PRO absolventySs="A" absolventyVs="N" ozp="A" bezbar="A" cizince="N"/>
     <POZNAMKA>ÚKOLY:
-- analytické práce při návrhu a implementaci IS 
+- analytické práce při návrhu a implementaci IS
 - analyzuje procesy a vytváří analýzy úloh a funkční specifikace
 - vytváří zadávací dokumentaci pro vývoj SW
 - dodržuje postupy dané metodikou pro vývoj SW
@@ -26,7 +25,7 @@ Požadavky:
 - znalost SQL DB
 - základní znalost kancelářského SW (MS Office, OpenOffice)
 - analytické myšlení
-- schopnost práce v týmu 
+- schopnost práce v týmu
 - samostatnost, komunikativnost, proaktivní přístup
 - angličtina na komunikativní úrovni
 - vzdělání vysokoškolské popř. středoškolské
@@ -41,8 +40,7 @@ Požadavky:
     <FIRMA nazev="2. Základní škola Holešov" ic="63458799"/>
     <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
     <MIN_VZDELANI kod="M" nazev="ÚSO s maturitou (bez vyučení)"/>
-    <UVAZEK kod="2" nazev="Zkrácený"/>
-    <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
+    <PRACPRAVNI_VZTAH ppvztahPpPlny="N" ppvztahPpZkrac="A" ppvztahSp="N" ppvztahDpp="N" ppvztahDpc="N"/>
     <KONOS titul="Mgr." jmeno="Helena" prijmeni="Moravčíková" telefon="+420 573 396 019" email="info@zshol.cz">Mgr. Helena Moravčíková, ředitelka</KONOS>
     <PRACOVISTE okresKod="3708" okres="Kroměříž" obec="Holešov" cobce="Holešov" ulice="Smetanovy sady" cp="625" co="4" psc="769 01" posta="Holešov" nazev="2. Základní škola Holešov">Smetanovy sady 625/4, 76901 Holešov</PRACOVISTE>
     <MZDA min="10000"/>
@@ -61,7 +59,7 @@ Požadavky:
     <FIRMA nazev="Základní škola Žďár nad Sázavou, Komenského 6" ic="48895229"/>
     <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
     <MIN_VZDELANI kod="M" nazev="ÚSO s maturitou (bez vyučení)"/>
-    <UVAZEK kod="2" nazev="Zkrácený"/>
+    <PRACPRAVNI_VZTAH ppvztahPpPlny="N" ppvztahPpZkrac="A" ppvztahSp="N" ppvztahDpp="N" ppvztahDpc="N"/>
     <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
     <KONOS titul="Mgr." jmeno="Jana" prijmeni="Svobodová" telefon="+420 566 591 423,736 472 472" email="j.svobodova@3zszdar.cz">Mgr. Jana Svobodová, ředitelka školy</KONOS>
     <PRACOVISTE okresKod="3714" okres="Žďár nad Sázavou" obec="Žďár nad Sázavou" cobce="Žďár nad Sázavou 3" ulice="Komenského" cp="825" co="6" psc="591 01" posta="Žďár nad Sázavou 1" nazev="Základní škola Žďár nad Sázavou, Komenského 6">Komenského 825/6, 59101 Žďár nad Sázavou 1</PRACOVISTE>
@@ -86,7 +84,7 @@ Spojení na kontaktní osobu: Mgr. Jana Svobodová - tel:566 591 423, 736 472 47
     <PROFESE kod="71140" nazev="Betonáři, železobetonáři a příbuzní pracovníci" doplnek="BETONÁŘ"/>
     <SMENNOST kod="1" nazev="Jednosměnný provoz"/>
     <MIN_VZDELANI kod="H" nazev="Střední odborné (vyučen)"/>
-    <UVAZEK kod="1" nazev="Plný"/>
+    <PRACPRAVNI_VZTAH ppvztahPpPlny="A" ppvztahPpZkrac="N" ppvztahSp="N" ppvztahDpp="N" ppvztahDpc="N"/>
     <PRACPRAVNI_VZTAH kod="1" nazev="Pracovní poměr"/>
     <PRACOVISTE okresKod="3808" okres="Přerov" obec="Tovačov"/>
     <MZDA min="92"/>

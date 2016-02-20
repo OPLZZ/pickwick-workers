@@ -23,8 +23,8 @@ module Pickwick
             offer[:description]     = xml.at("POZNAMKA").text rescue nil
 
             offer[:start_date]      = Time.parse(xml.at("PRAC_POMER").attributes["od"].text).utc.iso8601 rescue nil
-            offer[:employment_type] = xml.at("UVAZEK").attributes["nazev"].text == "Plný" ? "full-time" : "part-time"
 
+            offer[:employment_type] = get_employment_type(xml.at("PRACPRAVNI_VZTAH"))
             offer[:location]        = get_address(xml.at("PRACOVISTE"))
             offer[:contact]         = get_contact(xml.at("KONOS"))
             offer[:employer]        = get_employer(xml.at("FIRMA"))
@@ -32,8 +32,21 @@ module Pickwick
             offer
           end
 
+          def get_employment_type(employment_type)
+            if employment_type
+              case true
+              when __boolean_attribute(employment_type, "ppvztahPpPlny") || __boolean_attribute(employment_type, "ppvztahSp")
+                return 'full-time'
+              when __boolean_attribute(employment_type, "ppvztahPpZkrac")
+                return 'part-time'
+              when __boolean_attribute(employment_type, "ppvztahDpp") || __boolean_attribute(employment_type, "ppvztahDpc")
+                return 'seasonal'
+              end
+            end
+          end
+
           def get_address(address)
-            if address
+            if address && __boolean_attribute(address, "neurcitaAdresa") == false
               street, number = [], []
 
               street << address.attributes["ulice"].text rescue nil
@@ -68,6 +81,10 @@ module Pickwick
             if employer
               { company: (employer.attributes["nazev"].text rescue nil) }
             end
+          end
+
+          def __boolean_attribute(node, attribute)
+            node.attributes[attribute].text.downcase == "a" ? true : false rescue false
           end
 
         end

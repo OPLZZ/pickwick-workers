@@ -50,7 +50,10 @@ module Pickwick
             should "perform job" do
               Pickwick::API.expects(:store).with do |documents|
                 assert_equal 4,  documents.size
-                assert_equal 'programátor/ka, analytik/čka', documents.first[:title]
+                assert_equal 'programátor/ka, analytik/čka',     documents[0][:title]
+                assert_equal 'full-time',                        documents[0][:employment_type]
+                assert_equal 'asistent/ka pedagoga - ii stupeň', documents[1][:title]
+                assert_equal 'part-time',                        documents[1][:employment_type]
               end.returns(mock(status: 200))
 
               @processor.expects(:download_archive)
