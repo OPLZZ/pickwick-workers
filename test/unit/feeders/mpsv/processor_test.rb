@@ -4,7 +4,7 @@ module Pickwick
   module Workers
     module Feeders
       module MPSV
-        class ProcessorTest < Test::Unit::TestCase
+        class ProcessorTest < Minitest::Test
 
           context 'MPSV job' do
 
@@ -29,20 +29,16 @@ module Pickwick
 
             should "download data archive" do
               VCR.use_cassette('mpsv') do
-                assert_nothing_raised do
-                  @processor.download_archive
-                  assert_equal 330943, @processor.instance_variable_get("@archive").size
-                end
+                @processor.download_archive
+                assert_equal 330943, @processor.instance_variable_get("@archive").size
               end
             end
 
             should "extract data archive" do
               VCR.use_cassette('mpsv') do
-                assert_nothing_raised do
-                  @processor.download_archive
-                  @processor.extract_data
-                  assert_equal 1726757,@processor.instance_variable_get("@data").size
-                end
+                @processor.download_archive
+                @processor.extract_data
+                assert_equal 1726757,@processor.instance_variable_get("@data").size
               end
             end
 
@@ -73,7 +69,7 @@ module Pickwick
               @processor.expects(:extract_data)
               @processor.instance_variable_set('@data', fixture_file('mpsv.xml'))
 
-              assert_raise(Pickwick::API::Error) { @processor.perform }
+              assert_raises(Pickwick::API::Error) { @processor.perform }
             end
 
           end

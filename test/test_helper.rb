@@ -5,15 +5,16 @@ end
 
 require 'bundler/setup'
 
-require 'test/unit'
+require 'minitest/autorun'
+require 'minitest/reporters'
 require 'shoulda/context'
-require 'turn'
 require 'mocha/setup'
 require 'webmock'
 require 'vcr'
-require 'pry'
 
 require 'pickwick-workers'
+
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 VCR.configure do |c|
   c.cassette_library_dir = File.dirname(__FILE__) + '/fixtures/vcr_cassettes'

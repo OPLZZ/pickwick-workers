@@ -1,7 +1,7 @@
 require 'test_helper'
 
 module Pickwick
-  class APITest < Test::Unit::TestCase
+  class APITest < Minitest::Test
 
     context "When storing" do
 

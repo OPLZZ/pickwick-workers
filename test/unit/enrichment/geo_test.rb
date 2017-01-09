@@ -3,7 +3,7 @@ require 'test_helper'
 module Pickwick
   module Workers
     module Enrichment
-      class GeoTest < Test::Unit::TestCase
+      class GeoTest < Minitest::Test
         context "GEO enrichment" do
 
           setup do
