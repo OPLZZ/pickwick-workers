@@ -3,6 +3,7 @@ $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
 require File.expand_path('../lib/pickwick-workers',  __FILE__)
 
 require 'sidekiq/web'
+require 'sidekiq/cron/web'
 
 if ENV['SIDEKIQ_USERNAME'] && ENV['SIDEKIQ_PASSWORD']
 
