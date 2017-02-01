@@ -32,8 +32,8 @@ Sidekiq.configure_server do |config|
   config.server_middleware do |chain|
     chain.add Sidekiq::Throttler, storage: :redis
   end
-  config.poll_interval = 0.5
-  config.redis         = { url: ENV["SIDEKIQ_REDIS_URL"] || 'redis://localhost:6379' }
+  config.average_scheduled_poll_interval = 0.5
+  config.redis                           = { url: ENV["SIDEKIQ_REDIS_URL"] || 'redis://localhost:6379' }
 end
 
 Sidekiq.configure_client do |config|
